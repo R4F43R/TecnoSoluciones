@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TecnoSoluciones - Página Comercial</title>
+</head>
+<body bgcolor="#f0f0f0" text="#000000">
+
+  <!-- ENCABEZADO Y MENÚ DE NAVEGACIÓN -->
+  <table width="100%" bgcolor="#005f73">
+    <tr>
+      <td align="center">
+        <h1><font color="white">TecnoSoluciones</font></h1>
+        <p><font color="white"><em>Transformamos tecnología en resultados</em></font></p>
+
+        <!-- Botones de navegación -->
+        <form>
+          <input type="button" value="Servicios" onclick="location.href='#servicios'">
+          <input type="button" value="Productos" onclick="location.href='#productos'">
+          <input type="button" value="Multimedia" onclick="location.href='#multimedia'">
+          <input type="button" value="Precios" onclick="location.href='#precios'">
+          <input type="button" value="Contacto" onclick="location.href='#contacto'">
+        </form>
+
+        <hr width="60%">
+      </td>
+    </tr>
+  </table>
+
+  <!-- SERVICIOS -->
+  <table width="100%" bgcolor="#ffffff">
+    <tr><td align="center" id="servicios">
+      <h2><font color="#0a9396">Servicios</font></h2>
+      <ul>
+        <li>Desarrollo Web Personalizado</li>
+        <li>Automatización de Procesos</li>
+        <li>Consultoría en Transformación Digital</li>
+      </ul>
+      <hr width="40%">
+    </td></tr>
+  </table>
+
+  <!-- PRODUCTOS -->
+  <table width="100%" bgcolor="#ffffff">
+    <tr><td align="center" id="productos">
+      <h2><font color="#0a9396">Productos Destacados</font></h2>
+      <img src="https://via.placeholder.com/300x200" alt="Producto destacado"><br>
+      <p>ERP empresarial totalmente adaptable</p>
+      <hr width="40%">
+    </td></tr>
+  </table>
+
+  <!-- MULTIMEDIA -->
+  <table width="100%" bgcolor="#ffffff">
+    <tr><td align="center" id="multimedia">
+      <h2><font color="#0a9396">Galería Multimedia</font></h2>
+
+      <p><strong>Audio local:</strong></p>
+      <audio controls>
+        <source src="audio/intro.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+
+      <p><strong>Audio desde URL:</strong></p>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+      </audio>
+
+      <p><strong>Video promocional:</strong></p>
+      <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+
+      <hr width="40%">
+    </td></tr>
+  </table>
+
+  <!-- PRECIOS -->
+  <table width="100%" bgcolor="#ffffff">
+    <tr><td align="center" id="precios">
+      <h2><font color="#0a9396">Precios</font></h2>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <tr bgcolor="#e0e0e0">
+          <th>Servicio</th><th>Precio</th>
+        </tr>
+        <tr><td>Desarrollo Web</td><td>$800 USD</td></tr>
+        <tr><td>Consultoría IT</td><td>$100/hora</td></tr>
+        <tr><td>Soporte Técnico</td><td>$50/hora</td></tr>
+      </table>
+      <hr width="40%">
+    </td></tr>
+  </table>
+
+  <!-- CONTACTO -->
+  <table width="100%" bgcolor="#ffffff">
+    <tr><td align="center" id="contacto">
+      <h2><font color="#0a9396">Contáctanos</font></h2>
+      <form action="gracias.html" method="get">
+        <table border="0">
+          <tr><td>Nombre:</td><td><input type="text" name="nombre" required></td></tr>
+          <tr><td>Email:</td><td><input type="email" name="email" required></td></tr>
+          <tr><td>Mensaje:</td><td><textarea name="mensaje" rows="4" cols="30"></textarea></td></tr>
+          <tr><td colspan="2" align="center"><input type="submit" value="Enviar"></td></tr>
+        </table>
+      </form>
+      <hr width="40%">
+    </td></tr>
+  </table>
+
+  <!-- PIE DE PÁGINA -->
+  <table width="100%" bgcolor="#005f73">
+    <tr><td align="center">
+      <p><font color="white">&copy; 2025 TecnoSoluciones. Todos los derechos reservados.</font></p>
+      <p><font color="white">Correo: <a href="mailto:info@tecnosoluciones.com"><font color="#ffd166">info@tecnosoluciones.com</font></a></font></p>
+    </td></tr>
+  </table>
+
+</body>
+</html>
