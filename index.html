@@ -10,22 +10,43 @@
   <table width="100%" bgcolor="#005f73">
     <tr>
       <td align="center">
-        <h1><font color="white">TecnoSoluciones</font></h1>
-        <p><font color="white"><em>Transformamos tecnología en resultados</em></font></p>
+        <font size="9" color="white"><b>TecnoSoluciones</b></font>
+        <p><font size="4" color="white"><em>Transformamos tecnología en resultados</em></font></p>
 
         <!-- Botones de navegación -->
         <form>
-          <input type="button" value="Servicios" onclick="location.href='#servicios'">
-          <input type="button" value="Productos" onclick="location.href='#productos'">
-          <input type="button" value="Multimedia" onclick="location.href='#multimedia'">
-          <input type="button" value="Precios" onclick="location.href='#precios'">
-          <input type="button" value="Contacto" onclick="location.href='#contacto'">
+          <input type="button" value="Servicios" onclick="location.href='#servicios'"
+            style="font-size: 16px; padding: 10px 20px; margin: 5px;">
+          <input type="button" value="Productos" onclick="location.href='#productos'"
+            style="font-size: 16px; padding: 10px 20px; margin: 5px;">
+          <input type="button" value="Multimedia" onclick="location.href='#multimedia'"
+            style="font-size: 16px; padding: 10px 20px; margin: 5px;">
+          <input type="button" value="Precios" onclick="location.href='#precios'"
+            style="font-size: 16px; padding: 10px 20px; margin: 5px;">
+          <input type="button" value="Contacto" onclick="location.href='#contacto'"
+            style="font-size: 16px; padding: 10px 20px; margin: 5px;">
         </form>
 
         <hr width="60%">
       </td>
     </tr>
   </table>
+
+
+<!-- GALERÍA DESTACADA / CARRUSEL SIMULADO -->
+
+<!-- Carrusel horizontal con scroll (rectangular y ordenado) -->
+<div style="width: 640px; overflow-x: auto; white-space: nowrap; margin: auto; border: 2px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+  <img src="img/slide1.jpg" width="500" height="350" style="display: inline-block; margin-right: 10px;">
+  <img src="img/slide2.webp" width="500" height="350" style="display: inline-block; margin-right: 10px;">
+  <img src="img/slide3.jpg" width="500" height="350" style="display: inline-block;">
+</div>
+
+<p align="center">
+  <font size="2">Desliza horizontalmente para ver más →</font>
+</p>
+
+
 
   <!-- SERVICIOS -->
   <table width="100%" bgcolor="#ffffff">
@@ -81,36 +102,110 @@
   </table>
 
   <!-- PRECIOS -->
-  <table width="100%" bgcolor="#ffffff">
-    <tr><td align="center" id="precios">
+  <!-- PRECIOS -->
+<table width="100%" bgcolor="#ffffff">
+  <tr>
+    <td align="center" id="precios">
       <h2><font color="#0a9396">Precios</font></h2>
-      <table border="1" cellpadding="10" cellspacing="0">
-        <tr bgcolor="#e0e0e0">
-          <th>Servicio</th><th>Precio</th>
-        </tr>
-        <tr><td>Desarrollo Web</td><td>$800 USD</td></tr>
-        <tr><td>Consultoría IT</td><td>$100/hora</td></tr>
-        <tr><td>Soporte Técnico</td><td>$50/hora</td></tr>
-      </table>
-      <hr width="40%">
-    </td></tr>
-  </table>
 
-  <!-- CONTACTO -->
-  <table width="100%" bgcolor="#ffffff">
-    <tr><td align="center" id="contacto">
+      <!-- Tabla estilizada de precios -->
+      <table border="2" cellpadding="10" cellspacing="0" align="center">
+        <tr bgcolor="#e0e0e0">
+          <th><font face="Arial" size="4" color="#005f73">Servicio</font></th>
+          <th><font face="Arial" size="4" color="#005f73">Precio</font></th>
+          <th><font face="Arial" size="4" color="#005f73">Incluye</font></th>
+          <th><font face="Arial" size="4" color="#005f73">Acción</font></th>
+        </tr>
+
+        <tr bgcolor="#ffffff">
+          <td align="center"><b><font face="Verdana" size="3">Desarrollo Web</font></b></td>
+          <td align="center"><font face="Verdana">$800 USD</font></td>
+          <td>
+            <ul>
+              <li>Diseño personalizado</li>
+              <li>Responsive</li>
+              <li>Dominio gratis 1 año</li>
+            </ul>
+          </td>
+          <td align="center">
+            <input type="button" value="Contratar" onclick="alert('Gracias por contratar Desarrollo Web')">
+          </td>
+        </tr>
+
+        <tr bgcolor="#f9f9f9">
+          <td align="center"><b><font face="Verdana" size="3">Consultoría IT</font></b></td>
+          <td align="center"><font face="Verdana">$100/hora</font></td>
+          <td>
+            <ul>
+              <li>Asesoría técnica</li>
+              <li>Optimización de procesos</li>
+              <li>Plan estratégico</li>
+            </ul>
+          </td>
+          <td align="center">
+            <input type="button" value="Contratar" onclick="alert('Gracias por contratar Consultoría IT')">
+          </td>
+        </tr>
+
+        <tr bgcolor="#ffffff">
+          <td align="center"><b><font face="Verdana" size="3">Soporte Técnico</font></b></td>
+          <td align="center"><font face="Verdana">$50/hora</font></td>
+          <td>
+            <ul>
+              <li>Mantenimiento</li>
+              <li>Actualizaciones</li>
+              <li>Soporte remoto</li>
+            </ul>
+          </td>
+          <td align="center">
+            <input type="button" value="Contratar" onclick="alert('Gracias por contratar Soporte Técnico')">
+          </td>
+        </tr>
+      </table>
+	<hr width="40%">
+      
+
+<!-- Nota debajo de la tabla -->
+       <!-- CONTACTO -->
+ <table width="100%" bgcolor="#ffffff">
+  <tr>
+    <td align="center" id="contacto">
       <h2><font color="#0a9396">Contáctanos</font></h2>
+
       <form action="gracias.html" method="get">
-        <table border="0">
-          <tr><td>Nombre:</td><td><input type="text" name="nombre" required></td></tr>
-          <tr><td>Email:</td><td><input type="email" name="email" required></td></tr>
-          <tr><td>Mensaje:</td><td><textarea name="mensaje" rows="4" cols="30"></textarea></td></tr>
-          <tr><td colspan="2" align="center"><input type="submit" value="Enviar"></td></tr>
+        <table border="1" cellpadding="10" cellspacing="0" bgcolor="#f0f0f0">
+          <tr>
+            <td><font face="Verdana">Nombre:</font></td>
+            <td><input type="text" name="nombre" size="30" required></td>
+          </tr>
+          <tr>
+            <td><font face="Verdana">Email:</font></td>
+            <td><input type="email" name="email" size="30" required></td>
+          </tr>
+          <tr>
+            <td><font face="Verdana">Mensaje:</font></td>
+            <td><textarea name="mensaje" rows="5" cols="28"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input type="submit" value="Enviar" style="padding: 6px 16px;">
+            </td>
+          </tr>
         </table>
       </form>
+
+      <p>
+        <font size="2" color="#666666" face="Arial">
+          Te responderemos lo antes posible. ¡Gracias por escribirnos!
+        </font>
+      </p>
+
       <hr width="40%">
-    </td></tr>
-  </table>
+    </td>
+  </tr>
+</table>
+
+
 
   <!-- PIE DE PÁGINA -->
   <table width="100%" bgcolor="#005f73">
